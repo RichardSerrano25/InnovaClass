@@ -174,10 +174,11 @@
     @media (max-width: 768px) {
     header {
         background-color: #002366;
-        padding: 20px 60px 10px 60px;
+        padding: 20px 60px 10px 60px; /* Espacio para logos laterales */
         position: relative;
         text-align: center;
         border-bottom: 3px solid #0059b3;
+        overflow: hidden; /* Evita desbordes accidentales */
     }
 
     .logo-left,
@@ -186,6 +187,7 @@
         height: auto;
         position: absolute;
         top: 10px;
+        z-index: 2; /* Asegura que estén encima */
     }
 
     .logo-left {
@@ -197,13 +199,15 @@
     }
 
     h1 {
-        font-size: 6vw; /* Adaptativo al ancho */
+        font-size: 6vw;
         color: white;
-        margin: 50px 0 10px 0; /* espacio para los logos */
+        margin: 40px 0 10px 0;
         font-weight: bold;
         letter-spacing: 1px;
         white-space: normal;
         word-break: break-word;
+        z-index: 1;
+        position: relative; /* Asegura que el texto esté por debajo del logo */
     }
 
     .menu {
@@ -268,6 +272,7 @@
         border: none;
     }
 }
+
 
 }
 
