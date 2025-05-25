@@ -187,7 +187,7 @@
         height: auto;
         position: absolute;
         top: 10px;
-        z-index: 2; /* Asegura que estén encima */
+        z-index: 2;
     }
 
     .logo-left {
@@ -196,6 +196,14 @@
 
     .logo-right {
         right: 10px;
+    }
+
+    /* 👇 Ajustamos el tamaño del logo IINOIVA solo en móviles */
+    .IINOIVAclass {
+        width: 80px; /* o ajusta según lo necesites, por ejemplo 60px */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* centrar si es necesario */
     }
 
     h1 {
@@ -207,7 +215,7 @@
         white-space: normal;
         word-break: break-word;
         z-index: 1;
-        position: relative; /* Asegura que el texto esté por debajo del logo */
+        position: relative;
     }
 
     .menu {
@@ -271,6 +279,7 @@
         border-radius: 10px;
         border: none;
     }
+}
 
 }
 
