@@ -171,60 +171,86 @@
             border-radius: 10px;
         }
     
-        @media (max-width: 800px) {
-            header {
-                font-size: 1.8rem;
-                padding: 15px;
-            }
-    
-            .logo-left, .logo-right {
-                width: 18%;
-                top: 5px;
-            }
-    
-            .menu {
-                flex-direction: column;
-                padding: 10px 0;
-            }
-    
-            .menu ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-    
-            .menu a {
-                font-size: 1.2rem;
-                padding: 10px 15px;
-                width: 100%;
-                text-align: center;
-            }
-    
-            .sub-menu {
-                position: relative;
-                width: 100%;
-                box-shadow: none;
-            }
-    
-            .popup-content {
-                width: 95%;
-                margin: 30% auto;
-                padding: 15px;
-            }
-    
-            .popup-content iframe {
-                height: 250px;
-            }
-    
-            .bienvenida, .acerca {
-                font-size: 1.5rem;
-                padding: 15px;
-            }
-    
-            .gif-container {
-                margin-top: 20px;
-                padding: 15px;
-            }
+       @media (max-width: 800px) {
+    header {
+        font-size: 1.6rem;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .logo-left, .logo-right {
+        width: 60px;
+        height: auto;
+        top: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        font-size: 1.3rem;
+        padding: 12px 15px;
+        display: block;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .sub-menu {
+        position: static;
+        display: none;
+        width: 100%;
+        background-color: #34495e;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .menu li:hover .sub-menu {
+        display: block;
+    }
+
+    .sub-menu a {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        border-bottom: 1px solid #2c3e50;
+    }
+
+    .sub-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .bienvenida, .acerca {
+        font-size: 1.4rem;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .popup-content iframe {
+        height: 250px;
+    }
+
+    .gif-container {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
+
         }
     </style>
     
